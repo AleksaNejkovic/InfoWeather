@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activities.MainActivity"
+    android:id="@+id/mainLayout"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="100"
+        android:layout_gravity="center"
+        android:gravity="center">
+        <TextView
+            android:layout_width="50dp"
+            android:layout_weight="50"
+            android:layout_height="50dp"
+            android:textColor="#03A9F4"
+            android:textSize="16dp"
+            android:text="Trenutno vreme:"
+            android:textAlignment="center"
+            android:padding="5dp"
+            android:layout_gravity="center"
+            android:gravity="center">
+
+        </TextView>
+        <TextView
+            android:layout_width="50dp"
+            android:layout_weight="50"
+            android:textSize="16dp"
+            android:layout_height="50dp"
+            android:textColor="#03A9F4"
+            android:id="@+id/currentTime"
+            android:textAlignment="center"
+            android:padding="5dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            >
+        </TextView>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="100">
+        <TextView
+            android:layout_width="50dp"
+            android:layout_weight="50"
+            android:textSize="16dp"
+            android:layout_height="50dp"
+            android:textColor="#03A9F4"
+            android:text="Trenutni datum:"
+            android:textAlignment="center"
+            android:padding="5dp"
+            android:layout_gravity="center"
+            android:gravity="center">
+
+        </TextView>
+        <TextView
+            android:layout_width="50dp"
+            android:layout_weight="50"
+            android:layout_height="50dp"
+            android:textColor="#03A9F4"
+            android:textSize="16dp"
+            android:id="@+id/currentDate"
+            android:textAlignment="center"
+            android:padding="5dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            >
+        </TextView>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="100">
+        <TextView
+            android:layout_width="50dp"
+            android:layout_weight="50"
+            android:textSize="16dp"
+            android:layout_height="50dp"
+            android:textColor="#03A9F4"
+            android:text="Doba dana:"
+            android:textAlignment="center"
+            android:padding="5dp"
+            android:layout_gravity="center"
+            android:gravity="center">
+
+        </TextView>
+        <TextView
+            android:layout_width="50dp"
+            android:layout_weight="50"
+            android:layout_height="50dp"
+            android:textColor="#03A9F4"
+            android:textSize="16dp"
+            android:id="@+id/partOfTheDay"
+            android:textAlignment="center"
+            android:padding="5dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            >
+        </TextView>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="100">
+        <TextView
+            android:layout_width="50dp"
+            android:layout_weight="50"
+            android:layout_height="50dp"
+            android:textSize="16dp"
+            android:textColor="#03A9F4"
+            android:text="Poruka za korisnika:"
+            android:textAlignment="center"
+            android:padding="5dp"
+            android:layout_gravity="center"
+            android:gravity="center">
+
+        </TextView>
+        <TextView
+            android:layout_width="50dp"
+            android:layout_weight="50"
+            android:textSize="16dp"
+            android:layout_height="50dp"
+            android:textColor="#03A9F4"
+            android:id="@+id/userMessage"
+            android:textAlignment="center"
+            android:padding="5dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            >
+        </TextView>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="100">
+        <LinearLayout
+            android:layout_weight="50"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="100">
+        <LinearLayout
+            android:layout_weight="50"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_weight="50"
+                android:textSize="16dp"
+                android:layout_height="50dp"
+                android:textColor="#03A9F4"
+                android:text="Država i grad:"
+                android:textAlignment="center"
+                android:padding="5dp"
+                android:layout_gravity="center"
+                android:gravity="center">
+
+            </TextView>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_weight="40"
+                android:textSize="16dp"
+                android:layout_height="50dp"
+                android:textColor="#03A9F4"
+                android:id="@+id/countryAndCity"
+                android:text="Country and city"
+                android:textAlignment="center"
+                android:padding="5dp"
+                android:layout_gravity="center"
+                android:gravity="center">
+
+            </TextView>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_weight="50"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_weight="50"
+                android:textSize="16dp"
+                android:layout_height="50dp"
+                android:textColor="#03A9F4"
+                android:text="Adresa:"
+                android:textAlignment="center"
+                android:padding="5dp"
+                android:layout_gravity="center"
+                android:gravity="center">
+
+            </TextView>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_weight="50"
+                android:layout_height="50dp"
+                android:textColor="#03A9F4"
+                android:textSize="16dp"
+                android:text="Adress"
+                android:id="@+id/address"
+                android:textAlignment="center"
+                android:padding="5dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                >
+            </TextView>
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="@color/white" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="100"
+        android:id="@+id/weatherBackground">
+
+        <ListView
+            android:background="@color/dayMode"
+            android:id="@+id/weather_list"
+
+            android:dividerHeight="1dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </ListView>
+
+
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>

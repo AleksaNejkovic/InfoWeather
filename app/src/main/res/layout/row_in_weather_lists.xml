@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:padding="5dp"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:gravity="center">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="30dp"
+                android:id="@+id/timeNow"
+                android:text="12h"
+                android:textColor="#2196F3"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:gravity="center"
+                >
+
+            </TextView>
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="20dp"
+                android:text="02.21."
+                android:id="@+id/dateNow"
+                android:textColor="@color/white"
+                android:textSize="12dp"
+                android:layout_gravity="center|center_horizontal|center_vertical"
+                android:gravity="center|center_horizontal|center_vertical"
+                android:textStyle="bold">
+
+            </TextView>
+        </LinearLayout>
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:id="@+id/weatherIcon"
+            android:layout_gravity="center_vertical|center_horizontal"
+            />
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:text="19 °C"
+            android:id="@+id/maxTemp"
+            android:textStyle="bold"
+            android:textSize="22dp"
+            android:textColor="#FFFFFF"
+            android:layout_gravity="center"
+            android:gravity="center">
+        </TextView>
+
+
+        <TextView
+            android:layout_width="110dp"
+            android:layout_height="50dp"
+            android:text="Pretežno sunčano"
+            android:textColor="#FF5722"
+            android:id="@+id/weatherDesc"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="14dp"
+            android:textStyle="bold"
+            >
+        </TextView>
+
+
+
+    </LinearLayout>
+    <View
+        android:id="@+id/divider"
+        android:layout_width="330dp"
+        android:layout_gravity="center"
+        android:layout_height="1dp"
+         />
+
+
+</LinearLayout>
