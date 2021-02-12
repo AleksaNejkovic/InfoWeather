@@ -81,11 +81,11 @@ public class MainActivity extends AppCompatActivity {
             msg = "Dobro jutro!";
             Toast toast = Toast.makeText(getApplicationContext(), "Dobro jutro, dan je.", Toast.LENGTH_SHORT);
             toast.show();
-        } else if (curHour >= 12 && curHour < 18) {
+        } else if (curHour > 12 && curHour <= 18) {
             msg = "Dobar dan!";
             Toast toast = Toast.makeText(getApplicationContext(), "Dobar dan, dan je", Toast.LENGTH_SHORT);
             toast.show();
-        } else if (curHour >= 18 && curHour <= 21) {
+        } else if (curHour > 18 && curHour <= 21) {
             msg = "Dobro veče!";
             Toast toast = Toast.makeText(getApplicationContext(), "Dobro veče, noć je", Toast.LENGTH_SHORT);
             toast.show();
@@ -112,7 +112,7 @@ public class MainActivity extends AppCompatActivity {
         String curDate = new SimpleDateFormat("dd.MM.yyyy.", Locale.getDefault()).format(now);
         currentTime.setText(curTime);
         currentDate.setText(curDate);
-        userMessage.setText("Dobro jutro!");
+        userMessage.setText(msg);
 
         int bgColor = ContextCompat.getColor(this, isDay() ? R.color.dayMode : R.color.nightMode);
         int txtColor = getResources().getColor(isDay() ? R.color.nightMode : R.color.white);
@@ -219,7 +219,7 @@ public class MainActivity extends AppCompatActivity {
         listView.setAdapter(adapter);
     }
 
-    private boolean isDay() { return curHour >= 5 && curHour < 18; }
+    private boolean isDay() { return curHour >= 1 && curHour < 18; }
 
     class WeatherListAdapter extends ArrayAdapter<Weather> {
         List<Weather> weatherList;
