@@ -251,7 +251,7 @@ public class MainActivity extends AppCompatActivity {
             maxTemp.setText(String.valueOf(i.getTemperature()) + " °C");
             weatherDesc.setText(i.getIconPhrase());
 
-            if (curHour >= 5 && curHour < 18) {
+            if (isDay()) {
                 dateNow.setTextColor(getResources().getColor(R.color.black));
                 maxTemp.setTextColor(getResources().getColor(R.color.black));
             } else {
